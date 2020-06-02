@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5E35B1"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/botaoClear"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#039BE5"
+                android:onClick="clicaBotao"
+                android:text="C" />
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/botaoDivide"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#FDD835"
+                android:onClick="clicaBotao"
+                android:text="/" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="256dp"
+            android:layout_height="256dp">
+
+            <Button
+                android:id="@+id/botao7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="clicaBotao"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/botao8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="clicaBotao"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/botao9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="clicaBotao"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/botaoMultiplica"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#FDD835"
+                android:onClick="clicaBotao"
+                android:text="X" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="256dp"
+            android:layout_height="256dp">
+
+            <Button
+                android:id="@+id/botao4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="clicaBotao"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/botao5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="clicaBotao"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/botao6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="clicaBotao"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/botaoSubtrai"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#FDD835"
+                android:onClick="clicaBotao"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="256dp"
+            android:layout_height="256dp">
+
+            <Button
+                android:id="@+id/botao1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="clicaBotao"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/botao2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="clicaBotao"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/botao3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="clicaBotao"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/botaoAdicao"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#FDD835"
+                android:onClick="clicaBotao"
+                android:text="+" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/botao0"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="clicaBotao"
+                android:text="0" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/botaoPonto"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="clicaBotao"
+                android:text="." />
+
+            <Button
+                android:id="@+id/botaoIgual"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#039BE5"
+                android:onClick="clicaBotao"
+                android:text="=" />
+
+        </TableRow>
+    </TableLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-23dp" />
+
+    <TextView
+        android:id="@+id/campoResultado"
+        android:layout_width="242dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="520dp"
+        android:background="#1E88E5"
+        android:gravity="center_vertical|end"
+        android:text="0"
+        android:textColor="#F6F3F3"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
